@@ -11,9 +11,11 @@ connectDB();
 
 const app = express();
 
-// Middleware - CORS MUST BE FIRST!
+// CORS - Allow your frontend domain
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: process.env.NODE_ENV === 'production' 
+    ? process.env.FRONTEND_URL 
+    : 'http://localhost:3000',
   credentials: true
 }));
 
