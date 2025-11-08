@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api';  // Changed from 5000 to 5001
+// Use production backend URL when deployed, localhost for development
+const API_URL = import.meta.env.PROD 
+  ? 'https://wisewallet-49tg.onrender.com/api'
+  : 'http://localhost:5001/api';
 
 const api = axios.create({
   baseURL: API_URL,

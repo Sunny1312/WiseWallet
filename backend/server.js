@@ -12,12 +12,11 @@ connectDB();
 const app = express();
 
 // CORS - Allow your frontend domain
+// CORS - Allow frontend
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' 
-    ? process.env.FRONTEND_URL 
-    : 'http://localhost:3000',
-  credentials: true
-}));
+    origin: ['http://localhost:3000', 'https://wisewallet-frontend.onrender.com'],
+    credentials: true
+  }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
