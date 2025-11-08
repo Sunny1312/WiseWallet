@@ -72,7 +72,7 @@ NODE_ENV=development
 
 For MongoDB Atlas (cloud database):
 ```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/wisewallet?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/--?retryWrites=true&w=majority
 ```
 
 ### 3. Frontend Setup
