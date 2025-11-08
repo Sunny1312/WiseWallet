@@ -2,6 +2,8 @@
 
 A full-stack personal finance management application built with the MERN stack. Track your income, expenses, and visualize your spending patterns with interactive charts.
 
+🌍 **Live Demo:** [https://wisewallet-frontend.onrender.com/](https://wisewallet-frontend.onrender.com/)
+
 ![WiseWallet Dashboard](https://img.shields.io/badge/Status-Live-success)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4.4+-success)
 ![Node.js](https://img.shields.io/badge/Node.js-14+-success)
